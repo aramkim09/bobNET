@@ -185,14 +185,14 @@ int main(int argc, char *argv[])
     printf("    [5] Deauth Attack & Checking \n");
     printf("                               ");
     printf("    [6] Disasso Attack & Checking \n");
+    //printf("                               ");
+    //printf("    [7] Resasso Attack & Checking \n");
     printf("                               ");
-    printf("    [7] Resasso Attack & Checking \n");
+    printf("    [7] RTS Flooding \n");
     printf("                               ");
-    printf("    [8] RTS Flooding \n");
+    printf("    [8] CTS Flooding \n");
     printf("                               ");
-    printf("    [9] CTS Flooding \n");
-    printf("                               ");
-    printf("    [10] Exit \n");
+    printf("    [9] Exit \n");
     printf("                               ");
     printf("------------------------------------------\n");
     printf("select Menu Number : ");
@@ -215,10 +215,10 @@ int main(int argc, char *argv[])
         case 4 : exe_beacon(handle,sel_mac,sel_ap);break;
         case 5 : exe_deauth(handle,sel_mac);break;
         case 6 : exe_disasso(handle,sel_mac);break;
-        case 7 : exe_reasso(handle,sel_mac,sel_ap);break;
-        case 8 : exe_rts(handle,sel_mac,sel_ap);break;
-        case 9 : exe_cts(handle,sel_mac,sel_ap);break;
-        case 10 : return 0;
+        //case 7 : exe_reasso(handle,sel_mac,sel_ap);break;
+        case 7 : exe_rts(handle,sel_mac,sel_ap);break;
+        case 8 : exe_cts(handle,sel_mac,sel_ap);break;
+        case 9 : return 0;
         default: continue;
     }
 
